@@ -8,11 +8,11 @@ devtools::install_github("dkahle/ggmap")
  library(ggmap)
 
 
- pop <- read.csv("Áö¿ªº°ÀÎ±¸ÇöÈ².csv",header=T)
+ pop <- read.csv("ì§€ì—­ë³„ì¸êµ¬í˜„í™©.csv",header=T)
  pop
  lon <- pop$LON
  lat <- pop$LAT
- data <- pop$ÃÑÀÎ±¸¼ö
+ data <- pop$ì¸êµ¬ìˆ˜
  df <- data.frame(lon,lat,data)
  df
  map1 <- get_map("Jeonju",zoom=7 , maptype='roadmap')
